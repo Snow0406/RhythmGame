@@ -1,6 +1,5 @@
 ﻿// ReSharper disable InconsistentNaming
 
-using System;
 using RhythmGame.Data;
 using UnityEngine;
 
