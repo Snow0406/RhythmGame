@@ -5,6 +5,7 @@ namespace RhythmGame
 {
     public class NoteSpawner : MonoBehaviour
     {
+    
         private void Start()
         {
             
