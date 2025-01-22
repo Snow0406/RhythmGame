@@ -41,6 +41,8 @@ namespace RhythmGame.Manager
                     CurrentCombo = 0;
                     break;
             }
+
+            MaxCombo = Mathf.Max(MaxCombo, CurrentCombo);
         }
     }
 }
