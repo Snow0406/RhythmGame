@@ -1,4 +1,4 @@
-﻿// ReSharper disable InconsistentNaming
+// ReSharper disable InconsistentNaming
 
 using RhythmGame.Data;
 using UnityEngine;
@@ -41,7 +41,7 @@ namespace RhythmGame.Manager
                     CurrentCombo = 0;
                     break;
             }
-
+            
             MaxCombo = Mathf.Max(MaxCombo, CurrentCombo);
         }
     }

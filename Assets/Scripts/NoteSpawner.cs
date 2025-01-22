@@ -5,9 +5,20 @@ namespace RhythmGame
 {
     public class NoteSpawner : MonoBehaviour
     {
-        private void Start() { }
-        private void Update() { }
+    
+        private void Start()
+        {
+            
+        }
 
-        private void SpawnNote(NoteData noteData) { }
+        private void Update()
+        {
+            
+        }
+
+        private void SpawnNote(NoteData noteData)
+        {
+            
+        }
     }
 }

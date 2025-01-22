@@ -5,13 +5,13 @@ namespace RhythmGame.Data
 {
     public class ObjectPool
     {
-        private GameObject prefab;
-        private List<GameObject> pool;
+        private GameObject _prefab;
+        private List<GameObject> _pool;
 
         public ObjectPool(GameObject prefab, int poolSize)
         {
-            this.prefab = prefab;
-            this.pool = new List<GameObject>();
+            _prefab = prefab;
+            _pool = new List<GameObject>();
 
             for (int i = 0; i < poolSize; i++)
             {
@@ -21,14 +21,14 @@ namespace RhythmGame.Data
 
         private void CreatePool()
         {
-            GameObject obj = GameObject.Instantiate(prefab);
+            GameObject obj = GameObject.Instantiate(_prefab);
             obj.SetActive(false);
-            pool.Add(obj);
+            _pool.Add(obj);
         }
 
         public GameObject GetPool()
         {
-            foreach (var obj in pool) 
+            foreach (var obj in _pool)
             {
                 if (!obj.activeInHierarchy)
                 {
