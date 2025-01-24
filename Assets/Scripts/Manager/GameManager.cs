@@ -11,11 +11,12 @@ namespace RhythmGame.Manager
     public class GameManager : MonoBehaviour
     {
         public static GameManager Instance { get; private set; }
-
+        public bool IsPlaying { get; private set; }
+        
         [SerializeField] private string musicMapName;
         
+        public AudioSource audioSource;
         private MapData _currentMap;
-        private bool _isPlaying;
 
         private void Awake()
         {
@@ -47,13 +48,15 @@ namespace RhythmGame.Manager
 
         public void PlayGame()
         {
-            _isPlaying = true;
+            IsPlaying = true;
+            audioSource.Play();
         }
 
         public void PauseGame()
         {
-            if (!_isPlaying) return; // _isPlaying == false, !_isPlaying
-            _isPlaying = false;
+            if (!IsPlaying) return; // IsPlaying == false, !IsPlaying
+            IsPlaying = false;
+            audioSource.Pause();
         }
     }
 }
