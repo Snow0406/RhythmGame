@@ -28,6 +28,8 @@ namespace RhythmGame.Data
         public float timing;
         public int line; //D,F,K,L 라인
         public NoteType noteType;
+        
+        public float duration; // 롱노트를 위한
     }
     
     [Serializable]

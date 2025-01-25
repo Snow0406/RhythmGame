@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿// ReSharper disable CollectionNeverUpdated.Local
+
+using System.Collections.Generic;
 using RhythmGame.Data;
 using RhythmGame.Manager;
 using UnityEngine;
